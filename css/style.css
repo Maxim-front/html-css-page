@@ -39,7 +39,6 @@ header {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 60px;
-    overflow: hidden;
 }
 
 .language_switcher {
@@ -116,14 +115,18 @@ header {
 .header_images_wrapper {
     position: relative;
     width: 41.806vw;
-    margin-right: -60px;
+}
+
+@media screen and (min-width: 1100px) {
+    .header_images_wrapper {
+        margin-right: -60px;
+    }
 }
 
 .header_images_wrapper::before {
     content: "";
     display: block;
     padding-bottom: 92.194%;
-    overflow: hidden;
 }
 
 .header_img {
